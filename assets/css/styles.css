@@ -583,9 +583,18 @@ button { font-family: inherit; cursor: pointer; }
 .growth__stat .sub { font-size: clamp(0.85rem, 1.3vw, 1.05rem); font-weight: 600; color: var(--ink-2); }
 .growth__stat .story { margin-top: 14px; font-size: clamp(0.78rem, 1.05vw, 0.95rem); color: var(--text-soft); line-height: 1.5; max-width: 34ch; }
 
-/* milestone chips on the curve */
-.gmark { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 7px; }
+/* milestone chips on the curve
+   .gmark is a zero-size anchor pinned EXACTLY on the curve via left/top.
+   The dot is centered on that point; the chip floats above (or below for the peak). */
+.gmark { position: absolute; width: 0; height: 0; }
+.gmark .dot {
+  position: absolute; left: 0; top: 0; transform: translate(-50%, -50%);
+  width: 11px; height: 11px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #FCE5B0, var(--gold));
+  box-shadow: 0 0 0 4px rgba(244,205,110,0.3), 0 0 14px 2px rgba(230,184,78,0.7);
+}
 .gmark .chip {
+  position: absolute; left: 0; bottom: 14px; transform: translateX(-50%);
   font-family: "Playfair Display", serif;
   font-size: clamp(0.85rem, 1.5vw, 1.35rem); font-weight: 600;
   color: var(--ink);
@@ -596,12 +605,8 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: 0 6px 18px rgba(21,22,27,0.10);
   white-space: nowrap;
 }
-.gmark .dot {
-  width: 11px; height: 11px; border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #FCE5B0, var(--gold));
-  box-shadow: 0 0 0 4px rgba(244,205,110,0.3), 0 0 14px 2px rgba(230,184,78,0.7);
-}
-.gmark-peak .chip { color: #2A1D02; background: linear-gradient(135deg, var(--gold-bright), var(--gold)); border-color: rgba(255,255,255,0.5); }
+/* peak: chip hangs below the dot so it never clips the top edge of the image */
+.gmark-peak .chip { bottom: auto; top: 14px; color: #2A1D02; background: linear-gradient(135deg, var(--gold-bright), var(--gold)); border-color: rgba(255,255,255,0.5); }
 .gmark-peak .dot { width: 14px; height: 14px; box-shadow: 0 0 0 6px rgba(244,205,110,0.35), 0 0 22px 5px rgba(244,205,110,0.85); }
 
 /* year axis */
