@@ -607,7 +607,8 @@ button { font-family: inherit; cursor: pointer; }
 }
 /* peak: chip hangs below the dot so it never clips the top edge of the image */
 .gmark-peak .chip { bottom: auto; top: 14px; color: #2A1D02; background: linear-gradient(135deg, var(--gold-bright), var(--gold)); border-color: rgba(255,255,255,0.5); }
-.gmark-peak .dot { width: 14px; height: 14px; box-shadow: 0 0 0 6px rgba(244,205,110,0.35), 0 0 22px 5px rgba(244,205,110,0.85); }
+/* peak: keep only the sunburst flash from the image — no gold dot */
+.gmark-peak .dot { display: none; }
 
 /* ---- Draw-in animation: the gold line climbs from 0 to the peak ---- */
 /* The image is revealed left -> right with a clip wipe, so the rising curve
