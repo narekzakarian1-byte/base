@@ -605,8 +605,8 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: 0 6px 18px rgba(21,22,27,0.10);
   white-space: nowrap;
 }
-/* peak: chip hangs below the dot so it never clips the top edge of the image */
-.gmark-peak .chip { bottom: auto; top: 14px; color: #2A1D02; background: linear-gradient(135deg, var(--gold-bright), var(--gold)); border-color: rgba(255,255,255,0.5); }
+/* peak: chip sits above the sunburst flash, like the other milestone chips */
+.gmark-peak .chip { bottom: 30px; color: #2A1D02; background: linear-gradient(135deg, var(--gold-bright), var(--gold)); border-color: rgba(255,255,255,0.5); }
 /* peak: keep only the sunburst flash from the image — no gold dot */
 .gmark-peak .dot { display: none; }
 
