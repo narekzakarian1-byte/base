@@ -6,9 +6,9 @@
 /* ---------- Design Tokens ---------- */
 :root {
   /* Surfaces */
-  --bg:            #F4F3F0;   /* warm concrete white */
-  --bg-2:          #EBE9E4;   /* soft gray */
-  --bg-3:          #E3E0D9;
+  --bg:            #F6F7F9;   /* cool pure white, no warmth */
+  --bg-2:          #EDEEF2;   /* cool light gray */
+  --bg-3:          #E3E5EA;
   --surface:       #FFFFFF;
   --ink:           #15161B;   /* near-black */
   --ink-2:         #2C2E36;
@@ -283,7 +283,6 @@ button { font-family: inherit; cursor: pointer; }
   inset: 0;
   z-index: -3;
   background:
-    radial-gradient(60% 50% at 78% 8%, rgba(230,184,78,0.10), transparent 60%),
     radial-gradient(50% 40% at 12% 92%, rgba(255,255,255,0.7), transparent 60%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 55%, var(--bg) 100%);
 }
@@ -307,7 +306,7 @@ button { font-family: inherit; cursor: pointer; }
   pointer-events: none;
   z-index: -1;
 }
-.glow-gold { background: radial-gradient(circle, rgba(230,184,78,0.5), transparent 70%); }
+.glow-gold { background: radial-gradient(circle, rgba(230,184,78,0.12), transparent 70%); }
 .glow-white { background: radial-gradient(circle, rgba(255,255,255,0.9), transparent 70%); }
 
 /* Hexagon brand mark glyph */
