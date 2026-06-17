@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hexagon Consulting — стратегический партнёр по управляемому росту</title>
+  <meta name="description" content="Hexagon Consulting входит в контур управления компании и выстраивает меритократическую архитектуру, которая максимизирует скорость экспансии без потери управляемости и прибыльности." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-base">
+  <div class="hex-field" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Hexagon Consulting">
+        <span class="hex-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="38" height="38" fill="none">
+            <path d="M20 2 L35 11 L35 29 L20 38 L5 29 L5 11 Z" stroke="url(#hg)" stroke-width="1.6"/>
+            <path d="M20 11 L28 15.5 L28 24.5 L20 29 L12 24.5 L12 15.5 Z" stroke="url(#hg)" stroke-width="1.2" opacity="0.6"/>
+            <defs><linearGradient id="hg" x1="5" y1="2" x2="35" y2="38" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E6B84E"/><stop offset="1" stop-color="#A9760E"/>
+            </linearGradient></defs>
+          </svg>
+        </span>
+        <span class="brand-name">HEXAGON<span>.</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Главное меню">
+        <div class="nav-item">
+          <a class="nav-link" href="#formats">Услуги</a>
+          <div class="nav-menu">
+            <a href="uslugi/consulting.html"><div class="nm-title">Hexagon Consulting</div><div class="nm-sub">Трансформация под ключ</div></a>
+            <a href="uslugi/acceleration.html"><div class="nm-title">Hexagon Acceleration</div><div class="nm-sub">Сопровождение внедрения</div></a>
+            <a href="uslugi/strategy-board.html"><div class="nm-title">Hexagon Strategy Board</div><div class="nm-sub">Стратегическое партнёрство</div></a>
+            <a href="uslugi/fast-results.html"><div class="nm-title">Hexagon Fast Results</div><div class="nm-sub">Быстрые спринты</div></a>
+          </div>
+        </div>
+        <a class="nav-link" href="#solution">Методология</a>
+        <a class="nav-link" href="#cases">Кейсы</a>
+        <a class="nav-link" href="#trust">О нас</a>
+      </nav>
+
+      <a class="btn btn-gold btn-sm nav-cta-desktop" href="#contact">
+        Запрос консультации
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <button class="nav-toggle" aria-label="Открыть меню">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- mobile drawer -->
+  <div class="drawer" aria-hidden="true">
+    <button class="drawer-close" aria-label="Закрыть меню">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <a href="#formats">Услуги</a>
+    <a href="#solution">Методология</a>
+    <a href="#cases">Кейсы</a>
+    <a href="#trust">О нас</a>
+    <a class="btn btn-gold btn-block" href="#contact">Запрос консультации</a>
+  </div>
+
+  <!-- ============ SCREEN 1 — HERO ============ -->
+  <section class="hero">
+    <div class="glow glow-gold" style="width:520px;height:520px;top:-120px;right:-120px;" aria-hidden="true"></div>
+    <div class="glow glow-white" style="width:420px;height:420px;bottom:-160px;left:-160px;" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow reveal">Стратегический консалтинг · Hexagon Management</span>
+          <h1 class="h-display reveal reveal-d1">Стратегический партнёр компании по <span class="serif-em gold-text">управляемому росту</span></h1>
+          <p class="lead reveal reveal-d2">Мы входим в контур управления компании и выстраиваем меритократическую архитектуру, которая максимизирует скорость экспансии и масштабируется без потери управляемости и прибыльности.</p>
+          <div class="hero-cta reveal reveal-d3">
+            <a class="btn btn-gold" href="#contact">
+              Запрос консультации
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-glass" href="#solution">Как это работает</a>
+          </div>
+        </div>
+
+        <div class="banner-grid reveal reveal-d2" aria-label="Принципы Hexagon">
+          <article class="banner">
+            <span class="banner-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l2.4 5.4L20 8l-4 4 1 6-5-2.8L7 18l1-6-4-4 5.6-.6z"/></svg></span>
+            <h4>Лидеры</h4>
+            <p>Действуют как предприниматели внутри компании и отвечают за результат.</p>
+          </article>
+          <article class="banner">
+            <span class="banner-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.2c2.5.4 4.5 2.5 4.5 5.3"/></svg></span>
+            <h4>Команды</h4>
+            <p>Автономные мини-бизнесы с собственной экономикой и прибылью.</p>
+          </article>
+          <article class="banner">
+            <span class="banner-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M12 2v2M12 14v0"/></svg></span>
+            <h4>Клиент</h4>
+            <p>Член борда, напрямую формирующий продукт, который сам выбирает и покупает.</p>
+          </article>
+          <article class="banner">
+            <span class="banner-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <h4>Бизнес-процессы</h4>
+            <p>Гибкие и адаптивные, обеспечивающие предельную эффективность.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 2 — PROBLEMS ============ -->
+  <section class="section" id="problems">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Диагноз</span>
+        <h2 class="h2">Рост компании замедляют проблемы в&nbsp;управлении, а&nbsp;не&nbsp;ограничения рынка</h2>
+        <p class="lead">Ограничивающая модель управления в большинстве случаев является главной причиной.</p>
+      </div>
+
+      <div class="grid-4">
+        <article class="card-dark pain reveal">
+          <span class="pain-no">01</span>
+          <h3>Падающая прибыль</h3>
+          <p>Маржа сжимается, выручка либо не растёт, либо её рост не увеличивает прибыль, средний чек падает, большинство финансовых результатов деградируют.</p>
+        </article>
+        <article class="card-dark pain reveal reveal-d1">
+          <span class="pain-no">02</span>
+          <h3>Неэффективные бизнес-процессы</h3>
+          <p>Много действий — мало результатов. Дорогое обслуживание процессов, затянутые согласования, ненужные регламенты, «буксующая» цифровизация.</p>
+        </article>
+        <article class="card-dark pain reveal reveal-d2">
+          <span class="pain-no">03</span>
+          <h3>Лидеры и команды не самостоятельны</h3>
+          <p>Процессы и развитие продуктов держатся на собственнике, команда не проявляет инициативу, эффективность исполнения снижается при растущем ФОТ.</p>
+        </article>
+        <article class="card-dark pain reveal reveal-d3">
+          <span class="pain-no">04</span>
+          <h3>Продукты не развиваются</h3>
+          <p>Медленный запуск новых продуктов, текущая линейка всё меньше «попадает в клиента», стоимость лидов растёт, сервис обходится всё дороже.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 3 — SOLUTION / MERITOCRACY ============ -->
+  <section class="section" id="solution">
+    <div class="wrap">
+      <div class="glass term reveal" style="margin-bottom:46px;">
+        <div class="glow glow-gold" style="width:340px;height:340px;top:-120px;right:-80px;opacity:.5;" aria-hidden="true"></div>
+        <span class="eyebrow">Решение</span>
+        <h2 class="term-word" style="margin-top:18px;">Меритократия <span class="term-lat">от лат. «власть достойных»</span></h2>
+        <p>Система управления, при которой полномочия и ресурсы получает тот, кто создаёт наибольший вклад в результат для компании и клиента.</p>
+        <p style="margin-top:22px;color:var(--text);">Мы собрали лучшие мировые подходы в управлении, проверенные десятилетиями, и обеспечили их взаимоинтеграцию в единую модель — <strong class="gold-text">Hexagon&nbsp;Management</strong> — для наиболее эффективного и быстрого роста компании.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card comp reveal">
+          <span class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></span>
+          <h3>Гибкие «живые» бизнес-процессы</h3>
+          <p>Процессы выстроены под скорость и результат. Без лишней бюрократии, решения принимаются быстро.</p>
+        </article>
+        <article class="card comp reveal reveal-d1">
+          <span class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l2.4 5.4L20 8l-4 4 1 6-5-2.8L7 18l1-6-4-4 5.6-.6z"/></svg></span>
+          <h3>Результатоориентированная культура</h3>
+          <p>Развитие лидеров и команд направлено только на области, которые повышают эффективность и результаты.</p>
+        </article>
+        <article class="card comp reveal reveal-d2">
+          <span class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></span>
+          <h3>Клиентоцентричная стратегия</h3>
+          <p>Цели формируются от болей и потребностей клиента. Рост обеспечивается через реальную ценность рынку.</p>
+        </article>
+        <article class="card comp reveal">
+          <span class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3 8-8M3 12a9 9 0 1 0 4-7.5"/></svg></span>
+          <h3>OKR — система целеполагания</h3>
+          <p>Объединяет стратегию и интересы команд в единую систему целей. Развитие компании становится личным интересом каждого.</p>
+        </article>
+        <article class="card comp reveal reveal-d1">
+          <span class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 20h10M8 9l3 3 5-5"/></svg></span>
+          <h3>Продуктовое управление</h3>
+          <p>Продукты развиваются на основе реальных потребностей клиентов. Решения тестируются быстро и масштабируются при подтверждённом спросе.</p>
+        </article>
+        <article class="card comp reveal reveal-d2">
+          <span class="comp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21l4-1 11-11a2.8 2.8 0 0 0-4-4L3 16z"/><path d="M14 6l4 4"/></svg></span>
+          <h3>Корпоративное предпринимательство</h3>
+          <p>Менеджеры становятся «наёмными предпринимателями» с мини-бизнесами и отдельными P&amp;L. Зарабатывают от реального бизнес-результата.</p>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:46px;" class="reveal">
+        <a class="btn btn-glass" href="uslugi/consulting.html">Подробнее о методологии
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 4 — TRUST / VKUSVILL ============ -->
+  <section class="section" id="trust">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Доверие</span>
+        <h2 class="h2">Методология создавалась на практическом опыте и реальных кейсах</h2>
+      </div>
+
+      <div class="trust-grid">
+        <article class="card-dark chart-card reveal">
+          <span class="eyebrow" style="color:var(--gold-bright);">Опыт трансформации</span>
+          <div class="chart-stat" style="margin-top:18px;">
+            <span class="big">3 000<span class="x">×</span></span>
+            <span style="color:var(--on-dark-soft);font-size:15px;">рост за 10 лет</span>
+          </div>
+          <p style="color:var(--on-dark-soft);font-size:14.5px;max-width:40ch;">Основатель Hexagon Consulting Давид Закарян руководил одним из этапов трансформации ВкусВилла — компании, которая выросла галопирующими темпами на сложнейшем рынке благодаря похожим подходам.</p>
+          <div class="chart-wrap">
+            <svg viewBox="0 0 480 200" width="100%" height="180" preserveAspectRatio="none" aria-label="График роста ВкусВилла">
+              <defs>
+                <linearGradient id="grad-line" x1="0" y1="0" x2="480" y2="0" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#A9760E"/><stop offset="1" stop-color="#F4CD6E"/>
+                </linearGradient>
+                <linearGradient id="grad-fill" x1="0" y1="0" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#E6B84E" stop-opacity="0.32"/><stop offset="1" stop-color="#E6B84E" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g stroke="rgba(255,255,255,0.07)" stroke-width="1">
+                <line x1="0" y1="50" x2="480" y2="50"/><line x1="0" y1="100" x2="480" y2="100"/><line x1="0" y1="150" x2="480" y2="150"/>
+              </g>
+              <path d="M0 188 C120 184 210 170 300 120 C360 86 420 40 480 10 L480 200 L0 200 Z" fill="url(#grad-fill)"/>
+              <path data-chart-path d="M0 188 C120 184 210 170 300 120 C360 86 420 40 480 10" fill="none" stroke="url(#grad-line)" stroke-width="2.6" stroke-linecap="round"/>
+              <circle cx="480" cy="10" r="4.5" fill="#F4CD6E"/>
+            </svg>
+            <div style="display:flex;justify-content:space-between;color:var(--on-dark-soft);font-size:12px;margin-top:8px;opacity:.7;">
+              <span>2014</span><span>2017</span><span>2020</span><span>2024</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-dark res-col reveal reveal-d1">
+          <span class="eyebrow" style="color:var(--gold-bright);">4 драйвера успеха</span>
+          <div style="margin-top:22px;">
+            <div class="driver">
+              <span class="d-no">1</span>
+              <div><h4>Продуктовое управление «на автомат»</h4><p>Команды сами рождают, тестируют и выкатывают новые продукты без участия собственника.</p></div>
+            </div>
+            <div class="driver">
+              <span class="d-no">2</span>
+              <div><h4>Клиент как центр стратегии</h4><p>Все решения принимаются от реальных болей и потребностей клиента, а не от внутренних предположений.</p></div>
+            </div>
+            <div class="driver">
+              <span class="d-no">3</span>
+              <div><h4>Автономные команды с P&amp;L</h4><p>Каждое подразделение работает как мини-бизнес и отвечает за собственный результат.</p></div>
+            </div>
+            <div class="driver">
+              <span class="d-no">4</span>
+              <div><h4>Меритократическая мотивация</h4><p>Лидеры зарабатывают от реального бизнес-результата, а не от активности.</p></div>
+            </div>
+          </div>
+          <a class="btn btn-dark" style="margin-top:26px;align-self:flex-start;" href="uslugi/consulting.html">Подробнее о методологии
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 5 — RESULTS ============ -->
+  <section class="section" id="results">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Результаты</span>
+        <h2 class="h2">Эффективное управление на базе лучших мировых практик решает проблемы и усиливает рост</h2>
+      </div>
+
+      <div class="grid-2">
+        <article class="glass res-col reveal">
+          <span class="eyebrow">Сразу · процессный уровень</span>
+          <h3 class="h3" style="margin:16px 0 4px;">Первые изменения после трансформации</h3>
+          <ul class="res-list">
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span>Новые продукты выводятся быстро и эффективно, с минимальной стоимостью и максимальной конверсией</li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span>Лидеры и команды берут инициативу и ответственность</li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span>Значительно снижается потребность в ручном контроле</li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span>Продукты и бренд повышают добавленную ценность для клиента</li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span>Стратегия очищается от бюрократического шума и развивает компанию</li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></span>Цели команд синхронизированы со стратегией: каждый понимает, к чему движется</li>
+          </ul>
+        </article>
+
+        <article class="card-dark res-col reveal reveal-d1">
+          <span class="eyebrow" style="color:var(--gold-bright);">Далее · финансовый рост</span>
+          <h3 class="h3" style="margin:16px 0 4px;color:var(--on-dark);">Рост бизнес-показателей</h3>
+          <p style="font-size:13.5px;color:var(--on-dark-soft);">При корректном внедрении проект окупается кратно уже в первый год и становится высоколиквидной Capex-инвестицией.</p>
+          <ul class="metric-list">
+            <li><span class="m-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8M21 7v5M16 7h5"/></svg></span>Кратный рост компании и выручки</li>
+            <li><span class="m-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>Рост прибыльности и маржинальности</li>
+            <li><span class="m-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>Рост LTV клиента</li>
+            <li><span class="m-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 9l3 3 5-5"/></svg></span>Больше продуктов · меньше Time-to-market</li>
+            <li><span class="m-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></span>Усиление HR-бренда и культуры</li>
+            <li><span class="m-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></span>Опережение конкурентов за счёт скорости</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 6 — CASES & LOGOS ============ -->
+  <section class="section" id="cases">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">380+ компаний уже выбрали Hexagon</span>
+        <h2 class="h2">С нами растут компании, которые задают стандарт рынка</h2>
+      </div>
+    </div>
+
+    <div class="marquee reveal" style="margin-bottom:64px;">
+      <div class="marquee-track">
+        <span class="marquee-item">Меридиан</span><span class="marquee-item">Северↄталь</span><span class="marquee-item">Аркадия</span>
+        <span class="marquee-item">ВостокГрупп</span><span class="marquee-item">Прайм</span><span class="marquee-item">Контур</span>
+        <span class="marquee-item">Алмаз</span><span class="marquee-item">Феникс</span>
+        <span class="marquee-item">Меридиан</span><span class="marquee-item">Северↄталь</span><span class="marquee-item">Аркадия</span>
+        <span class="marquee-item">ВостокГрупп</span><span class="marquee-item">Прайм</span><span class="marquee-item">Контур</span>
+        <span class="marquee-item">Алмаз</span><span class="marquee-item">Феникс</span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="cases">
+        <!-- Case 1 -->
+        <article class="card case reveal">
+          <div class="case-main">
+            <span class="case-tag">Медицина · федеральная сеть клиник</span>
+            <h3>Все решения замыкались на собственнике</h3>
+            <p class="case-ctx">Рост уперся в потолок управляемости — потенциал был, но модель управления его ограничивала.</p>
+            <p class="case-impl"><b>Внедрили:</b> продуктовое управление · дебюрократизация оргструктуры · OKR</p>
+          </div>
+          <div class="case-metrics">
+            <div class="cm-row"><span class="cm-label">Выручка</span><span class="cm-val">+47%</span></div>
+            <div class="cm-row"><span class="cm-label">EBITDA</span><span class="cm-val">+62%</span></div>
+            <div class="cm-row"><span class="cm-label">Маржинальность</span><span class="cm-val">+9&nbsp;п.п.</span></div>
+            <div class="cm-row"><span class="cm-label">Средний чек</span><span class="cm-val">+18%</span></div>
+            <div class="cm-row"><span class="cm-label">Собственник в операционке</span><span class="cm-val">70 → 15%</span></div>
+          </div>
+        </article>
+
+        <!-- Case 2 -->
+        <article class="card case reveal">
+          <div class="case-main">
+            <span class="case-tag">FMCG · производитель продуктов питания</span>
+            <h3>Сильный продукт, но медленный запуск новинок</h3>
+            <p class="case-ctx">Продукты «промахивались» мимо клиента, новые запуски шли долго и дорого.</p>
+            <p class="case-impl"><b>Внедрили:</b> корпоративное предпринимательство · акселерация продуктов · клиентоцентричная стратегия</p>
+          </div>
+          <div class="case-metrics">
+            <div class="cm-row"><span class="cm-label">Выручка</span><span class="cm-val">+53%</span></div>
+            <div class="cm-row"><span class="cm-label">Новых продуктов в год</span><span class="cm-val">×3</span></div>
+            <div class="cm-row"><span class="cm-label">Time-to-market</span><span class="cm-val">−40%</span></div>
+            <div class="cm-row"><span class="cm-label">Маржинальность</span><span class="cm-val">+7&nbsp;п.п.</span></div>
+            <div class="cm-row"><span class="cm-label">LTV клиента</span><span class="cm-val">+22%</span></div>
+          </div>
+        </article>
+
+        <!-- Case 3 -->
+        <article class="card case reveal">
+          <div class="case-main">
+            <span class="case-tag">HoReCa · сеть ресторанов</span>
+            <h3>Масштабирование съедало прибыль</h3>
+            <p class="case-ctx">Больше точек — дороже управление и ниже маржа. Рост работал против экономики.</p>
+            <p class="case-impl"><b>Внедрили:</b> внутренний рынок и трансфертное ценообразование · оптимизация процессов · предпринимательская мотивация</p>
+          </div>
+          <div class="case-metrics">
+            <div class="cm-row"><span class="cm-label">Новых точек за год</span><span class="cm-val">+14</span></div>
+            <div class="cm-row"><span class="cm-label">Выручка</span><span class="cm-val">+50%</span></div>
+            <div class="cm-row"><span class="cm-label">Прибыль</span><span class="cm-val">+35%</span></div>
+            <div class="cm-row"><span class="cm-label">Опер. расходы на точку</span><span class="cm-val">−18%</span></div>
+            <div class="cm-row"><span class="cm-label">Инициатива команд</span><span class="cm-val">+40%</span></div>
+          </div>
+        </article>
+
+        <!-- Case 4 -->
+        <article class="card case reveal">
+          <div class="case-main">
+            <span class="case-tag">E-commerce · крупный онлайн-ритейлер</span>
+            <h3>Рост выручки не превращался в прибыль</h3>
+            <p class="case-ctx">Привлечение дорожало, а финансовый результат не улучшался.</p>
+            <p class="case-impl"><b>Внедрили:</b> Performance Management и OKR · продуктовое управление · стратегия экспансии</p>
+          </div>
+          <div class="case-metrics">
+            <div class="cm-row"><span class="cm-label">Выручка</span><span class="cm-val">+74%</span></div>
+            <div class="cm-row"><span class="cm-label">Прибыльность</span><span class="cm-val">убыток → +12%</span></div>
+            <div class="cm-row"><span class="cm-label">LTV / повторные</span><span class="cm-val">+31%</span></div>
+            <div class="cm-row"><span class="cm-label">Стоимость привлечения</span><span class="cm-val">−27%</span></div>
+            <div class="cm-row"><span class="cm-label">Скорость решений</span><span class="cm-val">×3</span></div>
+          </div>
+        </article>
+
+        <!-- Case 5 -->
+        <article class="card case reveal">
+          <div class="case-main">
+            <span class="case-tag">B2B · дистрибьютор</span>
+            <h3>Бизнес на плато, собственник перегружен</h3>
+            <p class="case-ctx">Новые направления не запускались, вся операционка держалась на одном человеке.</p>
+            <p class="case-impl"><b>Внедрили:</b> стратегический трекинг собственника и совета лидеров · дебюрократизация · запуск автономных команд</p>
+          </div>
+          <div class="case-metrics">
+            <div class="cm-row"><span class="cm-label">Годовой оборот</span><span class="cm-val">×1,8</span></div>
+            <div class="cm-row"><span class="cm-label">Прибыль</span><span class="cm-val">+44%</span></div>
+            <div class="cm-row"><span class="cm-label">Собственник в операционке</span><span class="cm-val">60 → 5%</span></div>
+            <div class="cm-row"><span class="cm-label">Новых направлений</span><span class="cm-val">3</span></div>
+            <div class="cm-row"><span class="cm-label">Срок ключевых решений</span><span class="cm-val">−55%</span></div>
+          </div>
+        </article>
+      </div>
+      <p style="text-align:center;margin-top:26px;font-size:12.5px;color:var(--muted);">Метрики приведены как иллюстрация типовых результатов и будут заменены подтверждёнными данными кейсов.</p>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 7 — FORMATS ============ -->
+  <section class="section" id="formats">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Форматы работы</span>
+        <h2 class="h2">Каждая компания выбирает формат под свой масштаб и задачу</h2>
+        <p class="lead">От полномасштабной трансформации под ключ до точечного спринта за две недели.</p>
+      </div>
+
+      <div class="grid-2">
+        <a class="card format reveal" href="uslugi/consulting.html">
+          <div class="fmt-top">
+            <span class="fmt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z"/><path d="M12 7 L16.5 9.5 V14.5 L12 17 L7.5 14.5 V9.5 Z"/></svg></span>
+            <span class="fmt-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+          <h3>Hexagon Consulting</h3>
+          <span class="fmt-sub">Трансформация под ключ</span>
+          <p>Полное внедрение Hexagon Management: перестраиваем управление, продукт, команды и процессы. Максимальный результат для компаний, готовых к системным изменениям.</p>
+          <span class="fmt-meta">
+            <span class="audience">Средний и крупный бизнес
+              <span class="audience-tip"><strong>Средний бизнес</strong> — выручка 300 млн – 3 млрд ₽/год. <strong>Крупный</strong> — свыше 3 млрд ₽/год.</span>
+            </span>
+            · от 3 месяцев
+          </span>
+        </a>
+
+        <a class="card format reveal reveal-d1" href="uslugi/acceleration.html">
+          <div class="fmt-top">
+            <span class="fmt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></span>
+            <span class="fmt-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+          <h3>Hexagon Acceleration</h3>
+          <span class="fmt-sub">Сопровождение внедрения</span>
+          <p>Обучаем и сопровождаем лидеров и команды по методологии Hexagon Management — до конкретных бизнес-результатов. Внедрение остаётся в компании навсегда.</p>
+          <span class="fmt-meta">
+            <span class="audience">Средний и крупный бизнес
+              <span class="audience-tip"><strong>Средний бизнес</strong> — выручка 300 млн – 3 млрд ₽/год. <strong>Крупный</strong> — свыше 3 млрд ₽/год.</span>
+            </span>
+            · от 3 месяцев
+          </span>
+        </a>
+
+        <a class="card format reveal reveal-d1" href="uslugi/strategy-board.html">
+          <div class="fmt-top">
+            <span class="fmt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <span class="fmt-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+          <h3>Hexagon Strategy Board</h3>
+          <span class="fmt-sub">Стратегическое партнёрство</span>
+          <p>Входим в контур управления как стратегический партнёр: трекинг собственника и топов или внешний департамент стратегии — без глубокой трансформации.</p>
+          <span class="fmt-meta">
+            <span class="audience">Малый, средний и крупный
+              <span class="audience-tip"><strong>Малый</strong> — до 300 млн ₽/год. <strong>Средний</strong> — 300 млн – 3 млрд. <strong>Крупный</strong> — свыше 3 млрд ₽/год.</span>
+            </span>
+            · регулярный формат
+          </span>
+        </a>
+
+        <a class="card format reveal" href="uslugi/fast-results.html">
+          <div class="fmt-top">
+            <span class="fmt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12a9 9 0 1 1 9 9"/><path d="M3 12h6M12 3v6"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg></span>
+            <span class="fmt-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+          <h3>Hexagon Fast Results</h3>
+          <span class="fmt-sub">Быстрые спринты</span>
+          <p>8 форматов для точечных задач: от CustDev и стратсессии до экспресс-диагностики управления. Конкретный результат за 1–5 недель. Можно собирать в пакет.</p>
+          <span class="fmt-meta">
+            <span class="audience">Любой бизнес
+              <span class="audience-tip">Подходит компаниям любого масштаба — формат подбирается под конкретную задачу и бюджет.</span>
+            </span>
+            · от 1 недели
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 8 — FINAL CTA ============ -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="cta-final reveal">
+        <span class="eyebrow" style="color:var(--gold-bright);justify-content:center;">Первый шаг</span>
+        <h2 class="h2" style="margin-top:18px;">Первые шаги к трансформации — бесплатно</h2>
+        <p class="lead">Запросите консультацию и бесплатную экспресс-диагностику уровня управленческой зрелости вашей компании. Вы получите чёткое понимание, где узкое место роста — и с чего начать.</p>
+        <div style="margin-top:30px;display:flex;justify-content:center;">
+          <a class="btn btn-gold" href="mailto:hello@hexagon.consulting">
+            Запросить консультацию и диагностику
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <p class="fine">Это займёт 30 минут. Без обязательств.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" style="margin-bottom:18px;">
+            <span class="hex-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="34" height="34" fill="none">
+                <path d="M20 2 L35 11 L35 29 L20 38 L5 29 L5 11 Z" stroke="url(#hg2)" stroke-width="1.6"/>
+                <defs><linearGradient id="hg2" x1="5" y1="2" x2="35" y2="38" gradientUnits="userSpaceOnUse"><stop stop-color="#E6B84E"/><stop offset="1" stop-color="#A9760E"/></linearGradient></defs>
+              </svg>
+            </span>
+            <span class="brand-name">HEXAGON<span>.</span></span>
+          </a>
+          <p style="font-size:14px;color:var(--text-soft);max-width:34ch;">Стратегический партнёр компаний по управляемому росту. Меритократическая архитектура управления — Hexagon Management.</p>
+        </div>
+        <div>
+          <h5>Услуги</h5>
+          <a href="uslugi/consulting.html">Hexagon Consulting</a>
+          <a href="uslugi/acceleration.html">Hexagon Acceleration</a>
+          <a href="uslugi/strategy-board.html">Hexagon Strategy Board</a>
+          <a href="uslugi/fast-results.html">Hexagon Fast Results</a>
+        </div>
+        <div>
+          <h5>Компания</h5>
+          <a href="#solution">Методология</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#trust">О нас</a>
+          <a href="#contact">Контакты</a>
+        </div>
+        <div>
+          <h5>Связаться</h5>
+          <a href="mailto:hello@hexagon.consulting">hello@hexagon.consulting</a>
+          <a href="tel:+74950000000">+7 (495) 000-00-00</a>
+          <a href="#contact">Запрос консультации</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Hexagon Consulting. Все права защищены.</span>
+        <span>Москва · Дубай · Алматы</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
