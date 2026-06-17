@@ -417,24 +417,24 @@ button { font-family: inherit; cursor: pointer; }
 /* ============================================================
    HERO
    ============================================================ */
-.hero { position: relative; padding-top: 160px; padding-bottom: 90px; overflow: hidden; }
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 54px;
-  align-items: center;
-}
-.hero h1 { margin-top: 22px; }
-.hero .lead { margin-top: 24px; max-width: 33ch; }
-.hero-cta { margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; }
+.hero { position: relative; padding-top: 150px; padding-bottom: 96px; overflow: hidden; text-align: center; }
+.hero-copy { max-width: 900px; margin: 0 auto; }
+.hero-copy .eyebrow { margin-inline: auto; }
+.hero h1 { margin: 24px auto 0; max-width: 18ch; }
+.hero .lead { margin: 26px auto 0; max-width: 58ch; }
+.hero-cta { margin-top: 38px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
 
 .banner-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 72px;
 }
+/* centered principle cards under the hero copy */
+.hero .banner { text-align: center; }
+.hero .banner-ico { margin-left: auto; margin-right: auto; }
 .banner {
-  padding: 22px 22px 24px;
+  padding: 26px 22px 26px;
   border-radius: var(--r);
   background: rgba(255,255,255,0.5);
   -webkit-backdrop-filter: blur(14px) saturate(150%);
@@ -843,8 +843,7 @@ button { font-family: inherit; cursor: pointer; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1080px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-  .hero .lead { max-width: 48ch; }
+  .banner-grid { grid-template-columns: repeat(2, 1fr); }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
